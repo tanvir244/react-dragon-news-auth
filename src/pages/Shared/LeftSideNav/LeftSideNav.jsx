@@ -27,13 +27,6 @@ const LeftSideNav = () => {
                     to={`/category/${category.id}`}
                 >{category.name}</NavLink>)
             }
-            {/* {
-                news.map(eachNews => <div
-                key={eachNews.id}
-                >
-                    <img src={eachNews.image_url} alt="" />
-                </div>)
-            } */}
         </div>
     );
 };
