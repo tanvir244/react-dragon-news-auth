@@ -19,7 +19,7 @@ const LeftSideNav = () => {
 
     return (
         <div className="space-y-6">
-            <h2 className="text-2xl px-4">All Categories</h2>
+            <h2 className="text-xl px-4 font-bold">All Categories</h2>
             {
                 categories.map(category => <NavLink
                     className="block ml-12"
@@ -27,13 +27,13 @@ const LeftSideNav = () => {
                     to={`/category/${category.id}`}
                 >{category.name}</NavLink>)
             }
-            {
+            {/* {
                 news.map(eachNews => <div
                 key={eachNews.id}
                 >
                     <img src={eachNews.image_url} alt="" />
                 </div>)
-            }
+            } */}
         </div>
     );
 };
